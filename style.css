@@ -1,0 +1,80 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.container {
+    height: 100vh;
+    /*vh - viewport size i.e 1vh=1% */
+    width: 100%;
+    background: url(./image.png);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.navbar {
+    width: 90%;
+    margin: auto;
+    padding: 15px 0;
+    /* padding for top_bottom left_right */
+    display: flex;
+    align-items: center;
+    /*vertical arrangement*/
+    justify-content: space-between;
+    /*horizontal arrangement*/
+}
+
+.logo {
+    width: 150px;
+    cursor: pointer;
+    /*using this pointer is replaced by hand  he...he..*/
+}
+
+.navbar ul li {
+    list-style: none;
+    display: inline-block;
+    margin: 15px;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    /* removes underline for a LINK*/
+    color: rgb(107, 56, 65);
+    font-size: 20px;
+}
+
+.content {
+    width: 100%;
+    position: absolute;
+    top: 25%;
+}
+
+.left {
+    margin-left: 6%;
+}
+
+.left h1 {
+    color: whitesmoke;
+    font-size: 90px;
+    line-height: 110px;
+    float: left;
+}
+
+.right {
+    float: right;
+    margin-right: 6%;
+    margin-top: 120px;
+    /*margin : space arnd border , padding : space inside border and content*/
+    display: flex;
+    align-items: center;
+}
+
+.right p {
+    font-size: 20px;
+    color: white;
+    font-weight: 800;
+    /*font weight : Value which says how BOLD or thin Font appearrss .*/
+    margin-right: 15px;
+}

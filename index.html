@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Noisser</title>
+</head>
+
+<body>
+    <div class="container">
+        <nav class="navbar"><img src="logo.png" class="logo">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Products</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="content">
+            <div class="left">
+                <h1>CREATE <br> THE <br> NOISE</h1>
+            </div>
+            <div class="right">
+                <p>Click to Listen</p>
+                <img src="play.png" alt="play" id="icon">
+            </div>
+        </div>
+    </div>
+
+    <audio id="mySong">
+        <source src="song1.mp3" type="audio/mp3">
+    </audio>
+    <script>
+        var mySong = document.getElementById("mySong");
+        var icon = document.getElementById("icon");
+
+        icon.onclick = function() {
+            if (mySong.paused) {
+                mySong.play();
+                icon.src = "pause.png";
+            } else {
+                mySong.pause();
+                icon.src = "play.png";
+            }
+        }
+    </script>
+</body>
+
+</html>
