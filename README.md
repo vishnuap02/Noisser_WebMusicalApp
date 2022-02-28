@@ -1,2 +1,4 @@
 # Noisser_WebMusicalApp
-Create a Bashing orchestra by Musical Instruments.
+Bashing orchestra by Musical Instruments.
+
+Just by Play/Pausing different instruments , Create a Orchestra.
